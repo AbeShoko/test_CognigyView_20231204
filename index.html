@@ -7,6 +7,13 @@
 </head>
 
 <body>
+    <p>TEST03</p>
+    <button onclick="changeBackgroundColor()">背景色変更</button>
+    <script>
+        function changeBackgroundColor() {
+          document.body.classList.toggle('dark');
+        }
+    </script>
     <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
     <script>
         initWebchat(
@@ -16,6 +23,4 @@
         });
     </script>
 
-
-    test
 </body>
