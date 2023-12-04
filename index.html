@@ -7,13 +7,15 @@
 </head>
 
 <body>
-    <p>TEST05</p>
+    <p>TEST06</p>
     <button onclick="changeBackgroundColor()">背景色変更</button>
     <script>
         function changeBackgroundColor() {
             initWebchat(
             "https://cognigy-v4-ep.scorobo.ai/c1e4c0a74c438fd7af49dbf88c56161d4cb41aae9c26cf092a020975a2c71930"
             ).then(function (webchat) {
+                window.webchat = webchat;
+                window.webchat.open();
                 forceWebsockets: true
             });
         }
